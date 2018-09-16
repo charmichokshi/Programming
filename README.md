@@ -1,2 +1,2 @@
 # Programming
-This repository contains codes developed by me for different programming problems.
+A collection of programming problems. Data Structures and Algorithms.
