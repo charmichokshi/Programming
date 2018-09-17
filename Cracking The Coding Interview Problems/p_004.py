@@ -9,25 +9,20 @@ count = [0] * (NO_OF_CHARS)
 def is_palindrome(s):
 	for i in range( 0, len(s)):
 		count[ord(s[i])] += 1
-
 	# all odd numbers will have 1 at the end, all even numbers will hace 0 at the end
  	odd = 0 
 	for i in range(0, NO_OF_CHARS):
 	    if (count[i] & 1) :
 	        odd = odd + 1
-
 	    if (odd > 1) :
 	        return False
-
 	return True
 
 def get_permutation(l):
 	if len(l) == 0:
 		return []
-
 	elif len(l) == 1:
 		return [l]
-
 	else:
 		prm = []
 		for i in range(len(l)):
@@ -46,10 +41,9 @@ def palindrome_permutation(s):
 				oddChar = chr(i)
 			if(count[i] > 0):
 				half += chr(i)*(count[i]/2)
-		
 		prm = get_permutation(list(half))
 		i = 0
-		for p in prm:
+		for p in prm:            # do the following for each permutation
 			ans = ""
 			p = "".join(p)
 			ans += p           # join first half of the string
