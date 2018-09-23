@@ -1,3 +1,5 @@
+import os
+
 def abbreviation(a, b):
     if len(b) > len(a):
         return("NO")
