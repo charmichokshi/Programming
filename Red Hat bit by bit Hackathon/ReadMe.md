@@ -1,4 +1,4 @@
-Problem statement: **Given a boolean 2D matrix, find the number of islands which are made from Prime numbers.**
+Problem statement: **Given a boolean 2D matrix, find the number of groups which are made from Prime numbers. A group is formed by connecting adjacent numbers horizontally or vertically.**
 
 For example, the below matrix contains 5 islands:
 
