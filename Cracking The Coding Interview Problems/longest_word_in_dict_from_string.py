@@ -1,3 +1,5 @@
+#Find longest word in dictionary that is a subsequence of a given string
+
 def find_longest_word(s, d):
 	ele = str()
 	max_len = 0
