@@ -1,4 +1,16 @@
 #!/bin/python
+import os
+
+'''
+Print a single integer denoting the number of letter a's 
+in the first n letters of the infinite string created by repeating s infinitely many times.
+i/p: 
+aba
+10
+
+o/p
+7
+'''
 
 def repeatedString(s, n):
     len_s = len(s)
