@@ -1,0 +1,36 @@
+#!/bin/python
+import os
+
+'''
+Print a single integer that denotes the number of valleys Gary walked through during his hike.
+
+i/p:
+8
+UDDDUDUU
+
+o/p:
+1
+'''
+
+def countingValleys(n, s):
+    no_of_valley = 0
+    total = 0
+    for char in s:
+        if char == "U":
+            total +=1
+        elif char == "D":
+            total -= 1
+
+        if total == 0 and char == "U":
+            no_of_valley += 1
+
+    return no_of_valley
+
+
+if __name__ == '__main__':
+    fptr = open(os.environ['OUTPUT_PATH'], 'w')
+    n = int(raw_input())
+    s = raw_input()
+    result = countingValleys(n, s)
+    fptr.write(str(result) + '\n')
+    fptr.close()
