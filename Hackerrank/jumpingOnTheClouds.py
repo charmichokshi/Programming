@@ -1,6 +1,13 @@
 import os
 
-
+'''
+Print the minimum number of jumps needed to win the game.
+i/p:
+7
+0 0 1 0 0 1 0
+o/p:
+4
+'''
 def jumpingOnClouds(c):
     steps, next_check = 0, 0
     for i in range(0, len(c)):
