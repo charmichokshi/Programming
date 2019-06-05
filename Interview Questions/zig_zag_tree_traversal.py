@@ -45,8 +45,7 @@ def zig_zag_traversal(root):
 		if len(curr_level) == 0:
 			left_to_right = not left_to_right
 			curr_level, next_level = next_level, curr_level
-			
-
+	
 root = Node(1)
 root.left = Node(2)
 root.right = Node(3)
