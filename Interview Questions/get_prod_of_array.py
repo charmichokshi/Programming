@@ -8,26 +8,20 @@
 def get_prod_with_div(arr):
 	prod = []
 	all_prod = 1
-
 	for ele in arr:
 		all_prod = all_prod * ele
-
 	for ele in arr:
 		prod.append(all_prod // ele)
-
 	return prod
 
 
 def get_prod_without_div(arr):
 	prod = []
 	all_prod = 1
-
 	for ele in arr:
 		all_prod = all_prod * ele
-
 	for ele in arr:
 		prod.append(int(all_prod * pow(ele, -1)))
-
 	return prod
 
 
